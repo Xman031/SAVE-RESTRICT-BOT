@@ -1,3 +1,7 @@
+# Rexbots
+# Don't Remove Credit
+# Telegram Channel @RexBots_Official
+
 from pyrogram import Client, filters
 from pyrogram.types import Message
 from database.db import db
@@ -22,6 +26,9 @@ async def set_thumb(client: Client, message: Message):
     await db.set_thumbnail(message.from_user.id, file_id)
     
     await message.reply_text("**__Custom Thumbnail Set Successfully ✅__**")
+# Rexbots
+# Don't Remove Credit
+# Telegram Channel @RexBots_Official
 
 @Client.on_message(filters.command(["view_thumb", "see_thumb"]) & filters.private)
 async def view_thumb(client: Client, message: Message):
@@ -45,3 +52,7 @@ async def thumb_mode(client: Client, message: Message):
     # This might be to toggle between default/custom/no thumbnail.
     # For now, just a placeholder explaining usage.
     await message.reply_text("**__Thumbnail Mode: Custom (Default if set).__**\nUse /set_thumb and /del_thumb to manage.")
+
+# Rexbots
+# Don't Remove Credit
+# Telegram Channel @RexBots_Official

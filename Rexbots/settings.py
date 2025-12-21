@@ -1,3 +1,7 @@
+# Rexbots
+# Don't Remove Credit
+# Telegram Channel @RexBots_Official
+
 from pyrogram import Client, filters, enums
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from database.db import db
@@ -37,6 +41,9 @@ async def commands_list(client: Client, message: Message):
 async def setchat(client: Client, message: Message):
     if len(message.command) < 2:
         return await message.reply_text("**Usage:** `/setchat chat_id`\n\nSet the chat ID where you want your dumps to go.")
+# Rexbots
+# Don't Remove Credit
+# Telegram Channel @RexBots_Official
     
     try:
         chat_id = int(message.command[1])
@@ -76,3 +83,7 @@ async def settings_back_callback(client: Client, callback_query):
         "**⚙️ Settings Menu**\n\nChoose an option below:",
         reply_markup=settings_buttons
     )
+
+# Rexbots
+# Don't Remove Credit
+# Telegram Channel @RexBots_Official

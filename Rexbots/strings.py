@@ -1,3 +1,7 @@
+# Rexbots
+# Don't Remove Credit
+# Telegram Channel @RexBots_Official
+
 
 HELP_TXT = """<b>🛠 𝐇𝐨𝐰 𝐓𝐨 𝐔𝐬𝐞 𝐌𝐞 - 𝐂𝐨𝐦𝐦𝐚𝐧 𝐝 𝐆𝐮𝐢𝐝𝐞</b>
 
@@ -80,6 +84,9 @@ View premium plan details and pricing.
 <i>Usage: /premium</i></blockquote>
 
 <b>🛠 𝐀𝐝𝐦𝐢𝐧 𝐂𝐨𝐦𝐦𝐚𝐧𝐝𝐬</b>
+# Rexbots
+# Don't Remove Credit
+# Telegram Channel @RexBots_Official
 
 <blockquote><b>🚫 /ban</b>
 Ban a user from using the bot.
@@ -119,45 +126,49 @@ List all active premium users.
 """
 
 COMMANDS_TXT = """<b>📜 Available Commands</b>
-
-<b>👤 User Commands:</b>
-/start - Start the bot
-/help - Get help information
-/batch - Save in bulk
-/login - Login Account
-/logout - Logout Account
-/set_caption - Set a custom caption
-/see_caption - See custom caption
-/del_caption - Delete custom caption
-/commands - Show this command list
-/thumb_mode - Change thumbnail mode
-/settings - Settings
-/myplan - My plan
-/premium - Buy Plan
-/setchat - Set dump chat
-/set_thumb - Set custom thumbnail
-/view_thumb - View custom thumbnail
-/del_thumb - Delete custom thumbnail
-/set_del_word - Set a delete word
-/rem_del_word - Remove a delete word
-/set_repl_word - Set a replacement word
-/rem_repl_word - Delete a replacement word
-/cancel - Cancel ongoing batch process
-
-<b>🛠 Admin Commands:</b>
-/ban - Ban a user
-/unban - Unban a user
-/broadcast - Send a message to all users
-/add_premium - Add premium a user
-/remove_premium - Remove premium a user
-/set_dump - Set dump id a user
-/add_unsubscribe - Disable force join for a user
-/del_unsubscribe - Enable force join for a user
-/dblink - Get db link
-/users - Total Users
-/premium_users - Total Active Premium Users
-"""
+    
+    <blockquote><b>👤 User Commands:</b>
+    <b>/start</b> - <i>Start the bot</i>
+    <b>/help</b> - <i>Get help information</i>
+    <b>/batch</b> - <i>Save in bulk</i>
+    <b>/login</b> - <i>Login Account</i>
+    <b>/logout</b> - <i>Logout Account</i>
+    <b>/set_caption</b> - <i>Set a custom caption</i>
+    <b>/see_caption</b> - <i>See custom caption</i>
+    <b>/del_caption</b> - <i>Delete custom caption</i>
+    <b>/commands</b> - <i>Show this command list</i>
+    <b>/thumb_mode</b> - <i>Change thumbnail mode</i>
+    <b>/settings</b> - <i>Settings</i>
+    <b>/myplan</b> - <i>My plan</i>
+    <b>/premium</b> - <i>Buy Plan</i>
+    <b>/setchat</b> - <i>Set dump chat</i>
+    <b>/set_thumb</b> - <i>Set custom thumbnail</i>
+    <b>/view_thumb</b> - <i>View custom thumbnail</i>
+    <b>/del_thumb</b> - <i>Delete custom thumbnail</i>
+    <b>/set_del_word</b> - <i>Set a delete word</i>
+    <b>/rem_del_word</b> - <i>Remove a delete word</i>
+    <b>/set_repl_word</b> - <i>Set a replacement word</i>
+    <b>/rem_repl_word</b> - <i>Delete a replacement word</i>
+    <b>/cancel</b> - <i>Cancel ongoing batch process</i></blockquote>
+    
+    <blockquote><b>🛠 Admin Commands:</b>
+    <b>/ban</b> - <i>Ban a user</i>
+    <b>/unban</b> - <i>Unban a user</i>
+    <b>/broadcast</b> - <i>Send a message to all users</i>
+    <b>/add_premium</b> - <i>Add premium a user</i>
+    <b>/remove_premium</b> - <i>Remove premium a user</i>
+    <b>/set_dump</b> - <i>Set dump id a user</i>
+    <b>/add_unsubscribe</b> - <i>Disable force join for a user</i>
+    <b>/del_unsubscribe</b> - <i>Enable force join for a user</i>
+    <b>/dblink</b> - <i>Get db link</i>
+    <b>/users</b> - <i>Total Users</i>
+    <b>/premium_users</b> - <i>Total Active Premium Users</i></blockquote>
+    """
 
 # Dont remove Credits
 # Developer Telegram @RexBots_Official
 # Update channel - @RexBots_Official
+
+# Rexbots
+# Don't Remove Credit
+# Telegram Channel @RexBots_Official

@@ -1,3 +1,7 @@
+# Rexbots
+# Don't Remove Credit
+# Telegram Channel @RexBots_Official
+
 from pyrogram import Client, filters
 from pyrogram.types import Message
 from database.db import db
@@ -24,6 +28,9 @@ async def unban(client: Client, message: Message):
         await message.reply_text(f"**User {user_id} Unbanned Successfully ✅**")
     except:
         await message.reply_text("Error unbanning user.")
+# Rexbots
+# Don't Remove Credit
+# Telegram Channel @RexBots_Official
 
 @Client.on_message(filters.command("set_dump") & filters.user(ADMINS))
 async def set_dump(client: Client, message: Message):
@@ -44,3 +51,7 @@ async def dblink(client: Client, message: Message):
 @Client.on_message(filters.command(["add_unsubscribe", "del_unsubscribe"]) & filters.user(ADMINS))
 async def manage_force_subscribe(client: Client, message: Message):
     await message.reply_text("Force Subscribe management feature is coming soon.")
+
+# Rexbots
+# Don't Remove Credit
+# Telegram Channel @RexBots_Official

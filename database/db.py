@@ -1,14 +1,8 @@
-# ---------------------------------------------------
-# File Name: DB.py
-# Author: RexBots_Official
-# GitHub: https://github.com/RexBots/
-# Telegram: https://t.me/RexBots_Official
-# YouTube: https://youtube.com/@RexBots_Official
-# Created: 2025-10-21
-# Last Modified: 2025-10-22
-# Version: Latest
-# License: MIT License
-# ---------------------------------------------------
+# Rexbots
+# Don't Remove Credit
+# Telegram Channel @RexBots_Official
+
+
 
 import motor.motor_asyncio
 from config import DB_NAME, DB_URI
@@ -78,6 +72,9 @@ class Database:
 
     async def del_thumbnail(self, id):
         await self.col.update_one({'id': int(id)}, {'$unset': {'thumbnail': ""}})
+# Rexbots
+# Don't Remove Credit
+# Telegram Channel @RexBots_Official
 
     # Premium Support
     async def add_premium(self, id, expiry_date):
@@ -157,4 +154,8 @@ db = Database(DB_URI, DB_NAME)
 
 # Rexbots
 # Don't Remove Credit 🥺
+# Telegram Channel @RexBots_Official
+
+# Rexbots
+# Don't Remove Credit
 # Telegram Channel @RexBots_Official

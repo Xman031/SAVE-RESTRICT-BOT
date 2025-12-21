@@ -1,3 +1,7 @@
+# Rexbots
+# Don't Remove Credit
+# Telegram Channel @RexBots_Official
+
 from pyrogram import Client, filters
 from pyrogram.types import Message
 from database.db import db
@@ -50,6 +54,9 @@ async def buy_premium(client: Client, message: Message):
 async def add_premium_cmd(client: Client, message: Message):
     if len(message.command) < 3:
         return await message.reply_text("**Usage:** `/add_premium user_id days`")
+# Rexbots
+# Don't Remove Credit
+# Telegram Channel @RexBots_Official
     
     try:
         user_id = int(message.command[1])
@@ -100,3 +107,7 @@ async def premium_users_list(client: Client, message: Message):
         text += "No premium users found."
         
     await message.reply_text(text)
+
+# Rexbots
+# Don't Remove Credit
+# Telegram Channel @RexBots_Official

@@ -1,3 +1,7 @@
+# Rexbots
+# Don't Remove Credit
+# Telegram Channel @RexBots_Official
+
 
 
 import os
@@ -180,7 +184,7 @@ async def send_start(client: Client, message: Message):
         ],
         [
             InlineKeyboardButton('📢 Official Channel', url='https://t.me/RexBots_Official'),
-            InlineKeyboardButton('👨‍💻 Developer', url='https://t.me/RexBots_Official')
+            InlineKeyboardButton('👨‍💻 Developer', url='https://t.me/about_zani/143')
         ]
     ]
     reply_markup = InlineKeyboardMarkup(buttons)
@@ -188,13 +192,13 @@ async def send_start(client: Client, message: Message):
     await client.send_message(
         chat_id=message.chat.id,
         text=(
-            f"<blockquote>👋 Welcome {message.from_user.mention}!</blockquote>\n\n"
-            "I am the Advanced Save Restricted Content Bot by RexBots.\n\n"
-            "<blockquote>🚀 What I Can Do:\n"
-            "‣ Save Restricted Post (Text, Media, Files)\n"
-            "‣ Support Private & Public Channels\n"
-            "‣ Batch/Bulk Mode Supported</blockquote>\n\n"
-            "<blockquote>⚠️ Note: You must <code>/login</code> to your account to use the downloading features.</blockquote>"
+            f"<blockquote><b>👋 Welcome {message.from_user.mention}!</b></blockquote>\n\n"
+            "<b>I am the Advanced Save Restricted Content Bot by RexBots.</b>\n\n"
+            "<blockquote><b>🚀 What I Can Do:</b>\n"
+            "<b>‣ Save Restricted Post (Text, Media, Files)</b>\n"
+            "<b>‣ Support Private & Public Channels</b>\n"
+            "<b>‣ Batch/Bulk Mode Supported</b></blockquote>\n\n"
+            "<blockquote><b>⚠️ Note:</b> <i>You must <code>/login</code> to your account to use the downloading features.</i></blockquote>"
         ),
         reply_markup=reply_markup,
         reply_to_message_id=message.id,
@@ -351,6 +355,9 @@ async def handle_private(client: Client, acc, message: Message, chatid: int, msg
         except Exception as e2:
             logger.error(f"Retry failed: {e2}")
             return
+# Rexbots
+# Don't Remove Credit
+# Telegram Channel @RexBots_Official
 
     if msg.empty:
         return
@@ -656,13 +663,13 @@ async def button_callbacks(client: Client, callback_query):
             chat_id=message.chat.id,
             message_id=message.id,
             text=(
-                f"<blockquote>👋 Welcome {callback_query.from_user.mention}!</blockquote>\n\n"
-                "I am the Advanced Save Restricted Content Bot by RexBots.\n\n"
-                "<blockquote>🚀 What I Can Do:\n"
-                "‣ Save Restricted Post (Text, Media, Files)\n"
-                "‣ Support Private & Public Channels\n"
-                "‣ Batch/Bulk Mode Supported</blockquote>\n\n"
-                "<blockquote>⚠️ Note: You must <code>/login</code> to your account to use the downloading features.</blockquote>"
+                f"<blockquote><b>👋 Welcome {callback_query.from_user.mention}!</b></blockquote>\n\n"
+                "<b>I am the Advanced Save Restricted Content Bot by RexBots.</b>\n\n"
+                "<blockquote><b>🚀 What I Can Do:</b>\n"
+                "<b>‣ Save Restricted Post (Text, Media, Files)</b>\n"
+                "<b>‣ Support Private & Public Channels</b>\n"
+                "<b>‣ Batch/Bulk Mode Supported</b></blockquote>\n\n"
+                "<blockquote><b>⚠️ Note:</b> <i>You must <code>/login</code> to your account to use the downloading features.</i></blockquote>"
             ),
             reply_markup=start_buttons,
             parse_mode=enums.ParseMode.HTML
@@ -697,3 +704,7 @@ async def button_callbacks(client: Client, callback_query):
 # Rexbots
 # Developer Telegram @RexBots_Official
 # Update channel - @RexBots_Official
+
+# Rexbots
+# Don't Remove Credit
+# Telegram Channel @RexBots_Official

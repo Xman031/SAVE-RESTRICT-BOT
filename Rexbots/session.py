@@ -1,3 +1,7 @@
+# Rexbots
+# Don't Remove Credit
+# Telegram Channel @RexBots_Official
+
 from pyrogram import Client, filters
 from pyrogram.types import Message
 from pyrogram.errors import (
@@ -73,6 +77,9 @@ async def login_handler(bot: Client, message: Message):
                 "If OTP Is 12345, Please Send It As '12 345' (with space) or '12345'.__**\n\n"
                 "Send /cancellogin to Cancel."
             )
+# Rexbots
+# Don't Remove Credit
+# Telegram Channel @RexBots_Official
             
         except PhoneNumberInvalid:
             await message.reply('**❌ __PHONE_NUMBER Is Invalid.__**')
@@ -152,3 +159,7 @@ async def cancel_login(client: Client, message: Message):
     # but filters shouldn't overlap too much if we check state.
     # The batch cancel in start.py doesn't check state, it just sets a flag.
     # That's fine, they can coexist.
+
+# Rexbots
+# Don't Remove Credit
+# Telegram Channel @RexBots_Official

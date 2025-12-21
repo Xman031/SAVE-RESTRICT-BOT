@@ -1,3 +1,7 @@
+# Rexbots
+# Don't Remove Credit
+# Telegram Channel @RexBots_Official
+
 from pyrogram import Client, filters
 from pyrogram.types import Message
 from database.db import db
@@ -12,6 +16,9 @@ async def set_caption(client: Client, message: Message):
     caption = message.text.split(" ", 1)[1]
     await db.set_caption(message.from_user.id, caption)
     await message.reply_text(f"**__Caption Set Successfully ✅__**\n\n**Caption:** `{caption}`")
+# Rexbots
+# Don't Remove Credit
+# Telegram Channel @RexBots_Official
 
 @Client.on_message(filters.command("see_caption") & filters.private)
 async def see_caption(client: Client, message: Message):
@@ -29,3 +36,7 @@ async def del_caption(client: Client, message: Message):
     
     await db.del_caption(message.from_user.id)
     await message.reply_text("**__Custom Caption Deleted Successfully 🗑__**")
+
+# Rexbots
+# Don't Remove Credit
+# Telegram Channel @RexBots_Official

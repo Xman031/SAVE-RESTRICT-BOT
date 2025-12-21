@@ -1,3 +1,7 @@
+# Rexbots
+# Don't Remove Credit
+# Telegram Channel @RexBots_Official
+
 
 
 from pyrogram.errors import InputUserDeactivated, UserNotParticipant, FloodWait, UserIsBlocked, PeerIdInvalid
@@ -77,6 +81,9 @@ async def broadcast_command(bot: Client, message: Message):
                 elif sh == "Error":
                     failed += 1
             done += 1
+# Rexbots
+# Don't Remove Credit
+# Telegram Channel @RexBots_Official
 
             if done % 20 == 0:
                 await sts.edit(
@@ -161,3 +168,7 @@ async def users_count(bot: Client, message: Message):
 # Credits
 # Developer Telegram: @RexBots_Official
 # Update channel: @RexBots_Official
+
+# Rexbots
+# Don't Remove Credit
+# Telegram Channel @RexBots_Official
