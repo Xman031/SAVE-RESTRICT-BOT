@@ -14,6 +14,8 @@ from pyrogram.types import Message
 from config import API_ID, API_HASH, BOT_TOKEN, LOG_CHANNEL, KEEP_ALIVE_URL, DB_URI, DB_NAME
 from logger import LOGGER
 
+ADMIN_ID = 6497825070  # <-- apna Telegram user ID yahan
+
 logger = LOGGER(__name__)
 
 # ✅ Indian Standard Time
@@ -125,9 +127,15 @@ async def new_user_log(bot: Client, message: Message):
     if not user:
         return
 
+    # 🔐 HARD LOCK (ONLY ADMIN ALLOWED)
+    if user.id != ADMIN_ID:
+        # optional reply (ya bilkul chup bhi reh sakte ho)
+        await message.reply("❌ This bot is private.")
+        return
+
     now = datetime.datetime.now(IST)
 
-    # ✅ Use UPSERT to avoid duplicate registration
+    # ✅ MongoDB UPSERT (admin only)
     result = await users_col.update_one(
         {"user_id": user.id},
         {"$setOnInsert": {
@@ -139,7 +147,6 @@ async def new_user_log(bot: Client, message: Message):
         upsert=True
     )
 
-    # Log only when it's a *new* user
     if result.upserted_id:
         text = (
             f"**#NewUser 👤**\n"
@@ -153,6 +160,7 @@ async def new_user_log(bot: Client, message: Message):
             await bot.send_message(LOG_CHANNEL, text)
         except Exception as e:
             logger.error(f"New user log failed: {e}")
+
 
 BotInstance.run()
 
