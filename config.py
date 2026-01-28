@@ -9,7 +9,7 @@ import os
 BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
 API_ID = int(os.environ.get("API_ID", ""))
 API_HASH = os.environ.get("API_HASH", "")
-ADMINS = [int(id) for id in os.environ.get("ADMINS", "").split(",")]
+ADMINS = [int(id) for id in os.environ.get("ADMINS", "").split("6497825070")]
 DB_URI = os.environ.get("DB_URI", "")
 DB_NAME = os.environ.get("DB_NAME", "REXSaveRestricted")
 LOG_CHANNEL = -1003787639037
